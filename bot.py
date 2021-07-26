@@ -24,7 +24,7 @@ async def ping(ctx):
 async def copycat(ctx, *args):
     await ctx.send(' '.join(args))
 
-@client.command(name = "yomama", description = "sends random yo mama joke")
+@client.command(name = "yomama", description = "sends random yo mama joke"
 async def yomama(ctx):
     url = "https://api.yomomma.info/"
     res  = requests.get(url)
@@ -33,3 +33,4 @@ async def yomama(ctx):
     await ctx.send(joke)
 
 client.run('ODY4ODc0ODgzODc3MTgzNTA5.YP2Ayw.JRxgqUr0siOBmzI22MhCFVstmtg')
+
